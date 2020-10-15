@@ -1,0 +1,28 @@
+<h2>Create Student</h2>
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <!-- First name -->
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" placeholder="Enter Firstname" id="firstname" required [(ngModel)]="student.firstname" name="firstname">
+        </div>
+        <!-- Last name -->
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" class="form-control" placeholder="Enter Lastname" id="lastname" required [(ngModel)]="student.lastname" name="lastname">
+        </div>
+        <div class="form-group">
+            <label for="lesson">Lesson:</label>
+            <input type="text" class="form-control" placeholder="Enter Lesson" id="lesson" required [(ngModel)]="student.lesson" name="lesson">
+        </div>
+
+        <!-- Age -->
+        <div class="form-group">
+            <label for="lessonid">Lesson Id</label>
+            <input type="number" class="form-control" placeholder="Enter Lesson Id" id="lessonid" required [(ngModel)]="student.lessonId" name="lessonid">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+<app-message></app-message>
